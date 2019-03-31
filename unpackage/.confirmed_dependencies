@@ -1,0 +1,26 @@
+{
+  "index.html": {
+    "resources": [
+      "sub01.html"
+    ],
+    "refer": [
+      "sub02.html",
+      "sub01.html",
+      "sub04.html",
+      "sub03.html"
+    ]
+  },
+  "sub03.html": {
+    "refer": [
+      "sub3/phead.html"
+    ]
+  },
+  "sub3/phead.html": {
+    "resources": [
+      "sub3/pbody.html"
+    ],
+    "refer": [
+      "sub3/pbody.html"
+    ]
+  }
+}

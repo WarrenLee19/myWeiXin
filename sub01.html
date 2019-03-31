@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			//加载事件
+			mui.plusReady(function(){	
+				mui(".mui-tabel-view-cell").on("tap","a",function(){
+				//获取好友列表
+				var title = this.getAttribute("title");
+				//打开聊天页面
+				mui.openWindow({
+    	url:"sub1/chat.html",
+    	id:"sub1/chat.html",
+    
+    extras:{	
+      name:title//自定义扩展参数，可以用来处理页面间传值
+    },
+    
+    show:{
+      autoShow:true,//页面loaded事件发生后自动显示，默认为true
+      aniShow:"slide-in-right",//页面显示动画，默认为”slide-in-right“；
+      duration:100//页面动画持续时间，Android平台默认100毫秒，iOS平台默认200毫秒；
+    },
+    waiting:{
+      autoShow:true,//自动显示等待框，默认为true
+      title:'正在加载...'//等待对话框上显示的提示内容
+    
+    }
+})
+			});
+				}
+			
+			);
+		</script>
+		<!--实体内容-->
+	<div class="mui-content">
+	    <!--好友列表-->
+	    <ul class="mui-table-view">
+	        <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;" title="玲玲">
+	                <img class="mui-media-object mui-pull-left" src="img/03.jpg">
+	                <div class="mui-media-body">
+	                    玲玲
+	                    <p class="mui-ellipsis">打呼噜怎么办？</p>
+	                </div>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;" title="PG13">
+	                <img class="mui-media-object mui-pull-left" src="img/04.jpg">
+	                <div class="mui-media-body">
+	                    PG13
+	                    <p class="mui-ellipsis">我是pg，想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+	                </div>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;" title="鲁鲁修">
+	                <img class="mui-media-object mui-pull-left" src="img/05.jpg">
+	                <div class="mui-media-body">
+	                    鲁鲁修
+	                    <p class="mui-ellipsis">all hail lelogh</p>
+	                </div>
+	            </a>
+	        </li>
+	         <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;" title="a君">
+	                <img class="mui-media-object mui-pull-left" src="img/11.jpeg">
+	                <div class="mui-media-body" >
+	                    a君
+	                    <p class="mui-ellipsis">最近过得还行</p>
+	                </div>
+	            </a>
+	        </li>
+	         <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;" title="b君">
+	                <img class="mui-media-object mui-pull-left" src="img/12.jpg">
+	                <div class="mui-media-body">
+	                    b君
+	                    <p class="mui-ellipsis">你最近还好么?尚爱看少女漫画嘛</p>
+	                </div>
+	            </a>
+	        </li>
+	          <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;" title="c君">
+	                <img class="mui-media-object mui-pull-left" src="img/13.jpg">
+		                <div class="mui-media-body">
+		                    c君
+		                    <p class="mui-ellipsis">是呢，我也觉得那样不太好...</p>
+		                </div>
+		            </a>
+		        </li>
+		    </ul>
+	</div>
+	</body>
+
+</html>

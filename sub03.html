@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		
+	</head>
+	<style type="text/css">
+		a{
+			display: inline-block;
+			float: right;
+			position:fixed;
+			
+		}
+		span{
+			margin: 0 25px;
+		}
+		.clear{
+			clear: both;
+		}
+	</style>
+	
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			
+			mui.init();
+			mui.plusReady(function(){
+				//轻击事件
+				
+					var friends=document.getElementById("friends");
+					friends.addEventListener("tap",function(){
+						mui.openWindow({
+    				url:"sub3/phead.html",
+    				id:"sub3/phead.html"
+    	
+  
+			})
+					})
+				
+			});	
+			
+			
+		</script>
+		<!--实体内容-->
+	<div class="mui-content">
+<ul class="mui-table-view">
+    <li class="mui-table-view-cell" id="friends"><img src="img/02.png" alt="朋友圈" width="30" height="30" align="absmiddle"/>朋友圈 
+        <span class="mui-badge mui-badge-success">99</span>
+        <a href="" class="mui-icon mui-icon-arrowright"  title="朋友圈 "></a>
+    </li>
+    <div class="clear"></div>
+    <img src="img/23.jpg" alt="" width="100%" height="20px"/>
+    <li class="mui-table-view-cell"><img src="img/01.JPG" alt="摇一摇" width="30" height="30" align="absmiddle"/>摇一摇 
+        <a href="" class="mui-icon mui-icon-arrowright"></a>
+    </li>
+    <li class="mui-table-view-cell"><img src="img/10.png" alt="扫一扫" width="30" height="30" align="absmiddle"/>扫一扫 
+        <a href="" class="mui-icon mui-icon-arrowright"></a>
+    </li>
+   <img src="img/23.jpg" alt="" width="100%" height="20px"/>
+     <li class="mui-table-view-cell"><img src="img/18.JPG" alt="搜一搜" width="30" height="30" align="absmiddle"/>搜一搜
+        <a href="" class="mui-icon mui-icon-arrowright"></a>
+    </li>
+    <li class="mui-table-view-cell"><img src="img/19.jpg" alt="看一看" width="30" height="30" align="absmiddle"/>看一看 
+        <a href="" class="mui-icon mui-icon-arrowright"></a>
+    </li>
+    <img src="img/23.jpg" alt="" width="100%" height="20px"/>
+     <li class="mui-table-view-cell"><img src="img/20.JPG" alt="摇一摇" width="30" height="30" align="absmiddle"/>购物
+        <a href="" class="mui-icon mui-icon-arrowright"></a>
+    </li>
+    <li class="mui-table-view-cell"><img src="img/22.jpg" alt="扫一扫" width="30" height="30" align="absmiddle"/>游戏 
+        <a href="" class="mui-icon mui-icon-arrowright"></a>
+    </li>
+</ul>
+	</div>
+	
+
+	</body>
+
+</html>
+	
